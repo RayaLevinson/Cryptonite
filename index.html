@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- ./ Bootstrap -->
+
+  <link rel="stylesheet" href="./css/loader_steps.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Cryptonite</title>
+</head>
+<body>
+  <!-- MAIN HEADER -->
+  <header id="main-header" class="d-flex justify-content-between">
+    <h1 class="display-3 align-self-center ml-3"><a href="index.html">Cryptonite</a></h1>
+    <!-- Image in the header will not appear on mobile screens using "d-none d-md-block" classes -->
+    <div id="header-img" class="d-none d-md-block">
+      <div id="borderLeft"></div>
+    </div>
+  </header>
+  <!-- ./ MAIN HEADER -->
+
+  <!-- MAIN NAVBAR WITH FORM -->
+  <nav id="main-navbar">
+    <div class="container-md d-md-flex justify-content-lg-between">
+      <ul class="d-flex pl-0">
+        <li class="active">
+          <a id="home" class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a id="reports" class="nav-link" href="javascript:void(0);">Live Reports</a>
+        </li>
+        <li class="nav-item">
+          <a id="about" class="nav-link" href="javascript:void(0);">About</a>
+        </li>
+      </ul>
+      <!-- Search form -->
+      <form id="search-form" class="form-inline d-sm-inline-block mb-3">
+        <input id="search-field" type="text" class="col-5 col-lg-6 form-control" placeholder="Search">
+        <button type="submit" class="btn btn-outline-success">Search</button>
+      </form>
+      <!-- ./ Search form -->
+    </div>
+    <!-- Show selected only checkbox -->
+    <div class="container-md d-md-flex justify-content-end">
+      <div class="mr-5 pr-4">
+        <input type="checkbox" id="show-selected" name="show-selected" value="showSelected">
+        <label class="label label-lg" for="show-selected"> Show selected only</label>
+      </div>
+    </div>
+    <!-- ./ Show selected only checkbox -->    
+  </nav>  
+  <!-- ./ MAIN NAVBAR -->
+
+  <section id="inner-content"></section>
+
+  <footer id="main-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-2">
+          <p>Made with <i class="fas fa-heart text-danger"></i> in Israel.</p>
+          <p>Data provided by CoinGecko & CryptoCompare APIs.</p>
+          <p> &copy; <span id="year"></span> Raya Levinson. All Rights Reserved.</p> 
+        </div>
+      </div>
+    </div>  
+  </footer>
+
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/872c2c4af2.js" crossorigin="anonymous"></script>
+  <!-- Font awesome -->
+
+  <!-- CanvasJS -->
+  <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+  <!-- To allow different jQuery versions for CanvasJS and for Bootstrap -->
+  <script>var $j = jQuery.noConflict(true);</script>
+  <!-- ./ CanvasJS -->
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <!-- ./ jQuery -->
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- ./ Bootstrap -->
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
+
+<!-- Links were used :
+  https://www.coingecko.com/en/api 
+  https://api.coingecko.com/api/v3/coins/list
+  https://api.coingecko.com/api/v3/coins/${coinId}
+  https://min-api.cryptocompare.com
+-->

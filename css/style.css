@@ -1,0 +1,206 @@
+/* Main Header */
+:root {
+  --header-height:  11.7rem;
+  --border-line-color:#555;
+  --bg-color: #56646426;
+  --main-color: #333; 
+}
+
+#main-header {
+  background: var(--bg-color);
+  color: #555;
+  height: var(--header-height);
+  border-bottom: 1px solid var(--border-line-color);
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
+}
+
+#main-header a {
+  color: #555;
+  text-decoration: none;
+}
+
+#main-header h1 {
+  margin-bottom: 1.2rem;
+}
+/* ./ Main Header */
+
+
+/* Main Navbar */
+#main-navbar {
+  margin-top: 2.5rem;
+}
+
+#main-navbar ul {
+ list-style: none;
+}
+
+#main-navbar ul li a {
+  font-size: 1.25rem;
+}
+
+.active a {
+  color: #fff;
+}
+
+.active {
+  background-color: #007bff;
+  border-radius: 7%;
+}
+/* ./ Main Navbar */
+
+/* Parallax - works fine on desktops only */
+.showcase-image {
+  position: relative;
+  opacity:  0.8;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+  /* 
+    fixed  ==> parallax
+    scroll ==> normal
+   */
+  background-attachment: scroll;
+  background-image:url('../img/showcase-image.jpg');
+  height: 20vh;
+}
+/* ./ Parallax */
+
+/* About page */
+.about-img {
+  margin-top: -4rem;  
+}
+
+.text-with-shadow {
+  text-shadow: 1px 1px 3px #25d366;
+}
+
+a.mailto-link {
+  text-decoration: none;
+}
+
+a.whatsApp {
+  text-decoration: none;
+}
+
+.whatsApp i {
+  background-color:#25d366;
+	color:#FFF;
+	border-radius:55px;
+	text-align:center;
+  font-size:1.5rem;
+  padding: 0.35rem;
+  box-shadow: 2px 2px 3px #999;
+}
+
+/* ./ About page */
+
+/* ====================================================== */
+/* Media Queries */
+/* ====================================================== */
+/* Extra small devices (portrait phones, less than 320px) */
+@media only screen and (max-width: 320px) {
+  #main-header h1 {
+    font-size: 3.5rem;  
+  }
+
+  #main-navbar ul li a {
+    font-size: 1rem;
+  }  
+}
+
+#main-footer {
+  background: var(--bg-color);
+}
+
+/*  Devices with size bigger than 321, but smaller than 768 
+    will have default style, since this site was designed in "Mobile first" design approach.
+*/
+
+/*  Medium devices (Tablets, iPads, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px)  {
+  :root {
+    --header-height:  10.5rem;
+  }
+
+  #main-header h1 {
+    padding-left: 2rem;
+  }  
+
+  #header-img {
+    height: var(--header-height);
+    width:  var(--header-height);
+    position: relative;
+    margin-top: 2.8rem;
+    border-bottom: 1px solid var(--border-line-color);    
+    background: url('../img/cryptocurrency_100.jpg') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  #borderLeft {
+    border-left: 1px solid var(--border-line-color);
+    position: absolute;
+    top: 75%;
+    bottom: 0;
+    /* https://stackoverflow.com/questions/4131490/any-way-to-limit-border-length */
+  }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  :root {
+    --header-height:  4.35rem;
+  }
+
+  #main-header {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #main-header h1 {
+    font-size: 1.5rem;  
+    font-weight: 370;
+    margin-bottom: 1rem;
+  }
+
+  #header-img {
+    height: var(--header-height);
+    width:  var(--header-height);
+    position: relative;
+    margin-top: 1rem;
+    border-bottom: 1px solid var(--border-line-color);
+    background: url('../img/cryptocurrency_100.jpg') no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  #borderLeft {
+    border-left: 1px solid var(--border-line-color);
+    position: absolute;
+    top: 75%;
+    bottom: 0;
+  }
+
+  .showcase-image {
+    background: url('../img/showcase-wide2.gif') center top no-repeat;
+    background-size: auto 100%;
+    background-attachment:fixed;
+    height: 35vh;
+    /*
+    background: url(<image>) center top no-repeat fixed;
+    background-size: auto <width size in %>;    
+    */    
+  }
+}
+
+/* Landscape mode */
+@media only screen and (max-height: 500px) {
+  :root {
+    --header-height:  5rem;
+  }  
+
+  #main-header h1 {
+    font-size: 3.5rem;  
+  }
+} 

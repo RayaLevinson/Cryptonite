@@ -1,0 +1,7 @@
+{
+  "description":  "This Cryptonite web site shows cryptocurrency information & real time prices report based on CoinGecko & CryptoCompare APIs. Comparison of cryptocurrencies prices shown in real-time report of cryptocurrencies and finding symbol of specific cryptocurrency gives user an easy way to find valuable information.",
+  "designApproach": "This site was designed in \"Mobile first\" design approach.",
+  "technologies": "Technologies: HTML5, CSS3, Bootstrap, OO JavaScript, ES6 Modules, jQuery, CanvasJS.",
+  "tools":        "Tools I used: VS Code, Git, GitHub.",
+  "createdBy":    "Created by Raya Levinson - Full Stack Web Developer"
+}
